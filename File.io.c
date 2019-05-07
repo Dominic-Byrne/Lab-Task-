@@ -1,10 +1,13 @@
 #include <stdio.h>
+void zeroInt(int *x);
 
 int main(void)
 {
-FILE*input;
-input = fopen(text.txt);
-while(!feof(input)) {
-    fscanf(input, "")
-    
+    int testInt = 100;
+    printf("%d\n", testInt);
+    zeroInt( &testInt);
+    printf("%d\n", testInt);
 }
+void zeroInt(int *x){
+        *x = 0;
+    }
